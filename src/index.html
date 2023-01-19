@@ -12,6 +12,10 @@
       mobileMenuIcon.addEventListener("click", () => {
         mobileMenuIcon.classList.contains("open") ? mobileMenuIcon.classList.remove("open") : mobileMenuIcon.classList.add("open");
       });
+      const ticketsMenuItem = document.querySelector("#tickets-menu-item");
+      ticketsMenuItem.addEventListener("click", () => {
+        ticketsMenuItem.classList.contains("open") ? ticketsMenuItem.classList.remove("open") : ticketsMenuItem.classList.add("open");
+      });
     };
   </script>
 </head>
@@ -32,7 +36,31 @@
           <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1 opacity-100 group-open:opacity-0 transition-all"></div>
           <div class="top-0 bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:-rotate-45  transition-all group-open:-top-2 relative"></div>
         </div>
-        <div class="hidden absolute top-[62px] bg-gradient-to-r from-rose-500 to-pink-500 peer-open:block w-full left-0">menu items</div>
+        <div class="hidden absolute top-[62px] bg-gradient-to-r from-rose-500 to-pink-500 peer-open:block w-full left-0">
+          <div class="menu-item justify-center">
+            <span>Home</span>
+          </div>
+          <div class="menu-item justify-center">
+            <span>Lineup</span>
+          </div>
+          <div id="tickets-menu-item"
+               class="group menu-item justify-center p-0 font-regular block">
+            <div class="p-4 text-center font-bold">Tickets</div>
+
+            <div
+              class="group-open:block hidden bg-pink-500 top-full mx-auto whitespace-nowrap rounded-b-md text-center">
+              <div class="relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-xs p-4">
+                <span>Single day ticket</span>
+              </div>
+              <div class="relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-xs p-4">
+                <span>7 days ticket</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item justify-center">
+            <span>Support</span>
+          </div>
+        </div>
       </div>
       <div class="flex-1 hidden md:flex items-center justify-end">
         <div class="menu-item">
