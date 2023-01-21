@@ -1077,6 +1077,36 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.animation-delay-200{
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.animation-delay-\[150ms\]{
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.animation-delay-300{
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.animation-delay-\[75ms\]{
+  -webkit-animation-delay: 75ms;
+          animation-delay: 75ms;
+}
+
+.animation-delay-1000{
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.animation-delay-400{
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
 .hover\:bg-white\/5:hover{
   background-color: rgb(255 255 255 / 0.05);
 }
