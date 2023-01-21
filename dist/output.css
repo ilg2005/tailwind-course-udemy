@@ -837,10 +837,6 @@ html {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\.\/src\/assets\/images\/hero\.jpg\'\)\]{
-  background-image: url('./src/assets/images/hero.jpg');
-}
-
 .bg-\[url\(\'\.\.\/src\/assets\/images\/hero\.jpg\'\)\]{
   background-image: url('../src/assets/images/hero.jpg');
 }
@@ -1005,6 +1001,10 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.outline-solid{
+  outline-style: solid;
+}
+
 .hover\:bg-white\/5:hover{
   background-color: rgb(255 255 255 / 0.05);
 }
@@ -1028,6 +1028,14 @@ html {
 .hover\:shadow-black\/20:hover{
   --tw-shadow-color: rgb(0 0 0 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.focus\:outline-2:focus{
+  outline-width: 2px;
+}
+
+.focus\:outline-solid:focus{
+  outline-style: solid;
 }
 
 .group:hover .group-hover\:block{
