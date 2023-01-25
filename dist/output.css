@@ -627,6 +627,19 @@ h6{
   }
 }
 
+.btn{
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-\[\#000\]{
+  background-color: #000;
+  color: white;
+}
+
 .menu-item{
   position: relative;
   display: flex;
@@ -789,10 +802,6 @@ h6{
   margin-top: 1.25rem;
 }
 
-.ml-\[-8px\]{
-  margin-left: -8px;
-}
-
 .-ml-\[8px\]{
   margin-left: -8px;
 }
@@ -851,10 +860,6 @@ h6{
 
 .h-full{
   height: 100%;
-}
-
-.h-\[250px\]{
-  height: 250px;
 }
 
 .min-h-\[400px\]{
@@ -1189,11 +1194,6 @@ h6{
   padding-right: 1rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1202,6 +1202,11 @@ h6{
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pr-4{
