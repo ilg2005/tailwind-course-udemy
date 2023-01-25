@@ -27,11 +27,11 @@
       const carousel = document.querySelector("#carousel");
 
       nextBtn.addEventListener("click", () => {
-        const itemWidth = carousel.querySelectorAll('div')[0].clientWidth;
+        const itemWidth = carousel.querySelectorAll("div")[0].clientWidth;
         carousel.scrollLeft = carousel.scrollLeft + itemWidth;
       });
       prevBtn.addEventListener("click", () => {
-        const itemWidth = carousel.querySelectorAll('div')[0].clientWidth;
+        const itemWidth = carousel.querySelectorAll("div")[0].clientWidth;
         carousel.scrollLeft = carousel.scrollLeft - itemWidth;
       });
     };
@@ -40,10 +40,11 @@
 <body class="dark">
 <main class="bg-zinc-200 dark:bg-zinc-900">
   <header class="text-zinc-200">
-      <div  id="toggle-mode" class="fixed top-24 right-0 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zinc-200 text-zinc-200 dark:text-zinc-900 p-2 text-3xl">
-        <i class="fa-solid fa-moon dark:hidden"></i>
-        <i class="fa-solid fa-sun hidden dark:inline"></i>
-      </div>
+    <div id="toggle-mode"
+         class="fixed top-24 right-0 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zinc-200 text-zinc-200 dark:text-zinc-900 p-2 text-3xl">
+      <i class="fa-solid fa-moon dark:hidden"></i>
+      <i class="fa-solid fa-sun hidden dark:inline"></i>
+    </div>
     <nav
       class="sticky z-10 top-0 flex bg-gradient-to-r from-rose-500 to-pink-500">
       <div class="flex items-center p-2 gap-2">
@@ -54,11 +55,14 @@
       </div>
       <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
         <div id="mobile-menu-button" class="group peer">
-          <div class="top-0 bg-zinc-200 rounded-full w-8 h-1 group-open:rotate-45 transition-all group-open:top-2 relative"></div>
+          <div
+            class="top-0 bg-zinc-200 rounded-full w-8 h-1 group-open:rotate-45 transition-all group-open:top-2 relative"></div>
           <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1 opacity-100 group-open:opacity-0 transition-all"></div>
-          <div class="top-0 bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:-rotate-45  transition-all group-open:-top-2 relative"></div>
+          <div
+            class="top-0 bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:-rotate-45  transition-all group-open:-top-2 relative"></div>
         </div>
-        <div class="hidden absolute top-[62px] bg-gradient-to-r from-rose-500 to-pink-500 peer-open:block w-full left-0">
+        <div
+          class="hidden absolute top-[62px] bg-gradient-to-r from-rose-500 to-pink-500 peer-open:block w-full left-0">
           <div class="menu-item justify-center">
             <span>Home</span>
           </div>
@@ -71,10 +75,12 @@
 
             <div
               class="group-open:block hidden bg-pink-500 top-full mx-auto whitespace-nowrap rounded-b-md text-center">
-              <div class="relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-xs p-4">
+              <div
+                class="relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-xs p-4">
                 <span>Single day ticket</span>
               </div>
-              <div class="relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-xs p-4">
+              <div
+                class="relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-xs p-4">
                 <span>7 days ticket</span>
               </div>
             </div>
@@ -109,7 +115,7 @@
       </div>
     </nav>
     <div
-          class="flex
+      class="flex
                 flex-col
                 items-center
                 justify-center
@@ -135,7 +141,7 @@
         </div>
         <div class="text-5xl font-bold">tw:<span class="text-sky-900">mf</span></div>
       </div>
-        <div class="font-bold mt-3 text-sm">Keep me updated with news and promotions</div>
+      <div class="font-bold mt-3 text-sm">Keep me updated with news and promotions</div>
       <form action=""
             class="flex mt-3 gap-2"
       >
@@ -146,7 +152,8 @@
         <button type="submit"
                 class="cursor-pointer rounded-sm bg-pink-500 py-2 px-4 font-bold transition-colors
                        hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20"
-        >Subscribe</button>
+        >Subscribe
+        </button>
       </form>
 
     </div>
@@ -154,44 +161,52 @@
 
   <div class="mx-auto mt-20 max-w-screen-lg text-zinc-900 dark:text-zinc-200">
     <h2>Headliners</h2>
-    <p>Experience the sonic delight from these made-up artists across 7 days that music fans are calling "one of the many gigs that will happen this year"</p>
+    <p>Experience the sonic delight from these made-up artists across 7 days that music fans are calling "one of the
+      many gigs that will happen this year"</p>
     <div class="flex">
       <div id="previous" class="text-5xl flex justify-center items-center cursor-pointer p-2 relative -top-8">
         <i class="fas fa-angle-left"></i>
       </div>
       <div id="carousel" class="scroll-smooth mt-4 flex flex-1 w-full gap-4 pb-5 snap-x overflow-x-auto">
         <div class="min-w-[80%] md:min-w-[40%]">
-          <div style="background-image: url('./assets/images/band1.jpg');" class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+          <div style="background-image: url('./assets/images/band1.jpg');"
+               class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
           <h5 class="mt-2">Corduroy Gary</h5>
           <p>1st of July 9pm - Main Stage</p>
         </div>
         <div class="min-w-[80%] md:min-w-[40%]">
-          <div style="background-image: url('./assets/images/band2.jpg');" class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+          <div style="background-image: url('./assets/images/band2.jpg');"
+               class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
           <h5 class="mt-2">Ken's Showing Off Again</h5>
           <p>2d of July 9:30pm - Main Stage</p>
         </div>
         <div class="min-w-[80%] md:min-w-[40%]">
-          <div style="background-image: url('./assets/images/band3.jpg');" class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+          <div style="background-image: url('./assets/images/band3.jpg');"
+               class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
           <h5 class="mt-2">Golden Quavers</h5>
           <p>3d of July 10pm - Main Stage</p>
         </div>
         <div class="min-w-[80%] md:min-w-[40%]">
-          <div style="background-image: url('./assets/images/band4.jpg');" class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+          <div style="background-image: url('./assets/images/band4.jpg');"
+               class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
           <h5 class="mt-2">Corduroy Gary</h5>
           <p>4th of July 9pm - Main Stage</p>
         </div>
         <div class="min-w-[80%] md:min-w-[40%]">
-          <div style="background-image: url('./assets/images/band5.jpg');" class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+          <div style="background-image: url('./assets/images/band5.jpg');"
+               class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
           <h5 class="mt-2">Corduroy Gary</h5>
           <p>5th of July 9pm - Main Stage</p>
         </div>
         <div class="min-w-[80%] md:min-w-[40%]">
-          <div style="background-image: url('./assets/images/band6.jpg');" class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+          <div style="background-image: url('./assets/images/band6.jpg');"
+               class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
           <h5 class="mt-2">Corduroy Gary</h5>
           <p>6th of July 9pm - Main Stage</p>
         </div>
         <div class="min-w-[80%] md:min-w-[40%]">
-          <div style="background-image: url('./assets/images/band7.jpg');" class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+          <div style="background-image: url('./assets/images/band7.jpg');"
+               class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
           <h5 class="mt-2">Corduroy Gary</h5>
           <p>7th of July 9pm - Main Stage</p>
         </div>
@@ -200,6 +215,35 @@
         <i class="fas fa-angle-right"></i>
       </div>
     </div>
+    <h2 class="mt-20">Tickets</h2>
+    <table class="mt-5 table w-full border border-zinc-500 border-collapse">
+      <thead class="text-lg font-bold">
+      <td class="border border-zinc-500 p-3">Tickets</td>
+      <td class="border border-zinc-500 p-3">Price</td>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="border border-zinc-500 py-2 px-3">
+          Single day ticket
+        </td>
+        <td class="border border-zinc-500 py-2 px-3">
+          30$
+        </td>
+      </tr>
+      <tr>
+        <td class="border border-zinc-500 py-2 px-3">
+          7 day ticket
+        </td>
+        <td class="border border-zinc-500 py-2 px-3">
+          19$
+        </td>
+      </tr>
+      </tbody>
+      <caption class="caption-bottom">
+        Once they're gone, they're gone!
+      </caption>
+
+    </table>
   </div>
 
 </main>
